@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+	<h2>You. Nailed. It.</h2>
+<% else %>
+
+<div class="hero-unit">
+  <h2>The easiest way to manage your students.</h2>
+	<p>
+		Coming soon. Manage your teaching business. Collect payments, schedule appointments and keep a permanent record of what you work on. 
+	</p>
+	<p>
+		<%= link_to "Sign up Now", new_user_registration_path, class:"btn btn-success btn large" %>
+	</p>
+</div>
+
+<% end %>
